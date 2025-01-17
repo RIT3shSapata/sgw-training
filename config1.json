@@ -1,8 +1,11 @@
 {
+  "api": {
+        "admin_interface": "0.0.0.0:4985"
+      },
   "bootstrap": {
     "server": "couchbase://172.17.0.2",
     "username": "Administrator",
-    "password": "password",
+    "password": "123456",
     "server_tls_skip_verify": true,
     "use_tls_server": false
   },
