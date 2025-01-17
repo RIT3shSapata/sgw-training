@@ -89,6 +89,35 @@ Connection: keep-alive
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+- Created a sample document called SampleDoc
+- The revision id's are different
+- This may be because when the document is updated, there is a an update request in the sync gateway as well, which causes the rev id to change.
+  "revs": [
+          "1-e3b7f253737ea7c822f3ddfb17aebe33",
+          "2-d7605cb0582784b469d22881bedfa931",
+          "3-ed7ce18962b1543c62aa60eae797c31f"
+        ] this is in the document metadata through UI after 1 creation and 2 updates.
+
+  {
+    "_id": "SampleDoc",
+    "_rev": "3-ed7ce18962b1543c62aa60eae797c31f",
+    "name": "This is a sample doc for rev id 3"
+  }
+  This is what was shown through the Postman request after the second update.
+
+  After updating it once more:
+  "rev": "4-5e193a64d2c92e28657db387751bfc4f",
+  "sequence": 7,
+  is shown in the metadata of the document metadata.
+
+  {
+    "_id": "SampleDoc",
+    "_rev": "4-5e193a64d2c92e28657db387751bfc4f",
+    "name": "This is a sample doc for rev id 4"
+  }
+  is shown in the postman request.
+
+  Sequence 7 is the update in the Couchbase UI, and 8 would be the update in the Sync, which explains the difference in rev id.
 
 ## Task 5
 
