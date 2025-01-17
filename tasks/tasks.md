@@ -28,17 +28,10 @@
 - created the document: Output:
 - "id": 1, "ok": True, "rev": "1-622c50a7af0ecb76dff71baa74d13333"
 - Get document executed. Output: 
-- {
-    "db_name": "db1",
-    "update_seq": 1,
-    "committed_update_seq": 1,
-    "instance_start_time": 1737106922186214,
-    "compact_running": false,
-    "purge_seq": 0,
-    "disk_format_version": 0,
-    "state": "Online",
-    "server_uuid": "b7d539a04e4f19cdefc6db880a471ca3"
-}
+-  "_id": "1",
+    "_rev": "1-622c50a7af0ecb76dff71baa74d13333",
+    "key1": "value1",
+    "key2": "value2"
 
 ## Task 3
 
