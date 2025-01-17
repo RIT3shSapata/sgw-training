@@ -86,7 +86,7 @@ Response:
   }
 }
 ```
-also changed the revision for good measure.
+also changed the revision for good measure, shared bucket access is false
 
 + We can simply make a request to /db1/2
 + Skip delete
@@ -97,10 +97,12 @@ also changed the revision for good measure.
 
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
-- Also the metadata from postman ends with `0000`, with UI it ends with `0006`
+
 
 ### Observations
-We have a current revision ID (which changes when the document is updated) and a history of past revision IDs 
+- We have a current revision ID (which changes when the document is updated) and a history of past revision IDs 
+- Also the metadata from postman ends with `0000`, with UI it ends with `0006`
+- when both are set to true enable_shared_bucket_access: true, import_docs: true, when we add from the UI, the revision id is 2, IMO the 
 
 ## Task 5
 
@@ -116,3 +118,7 @@ We have a current revision ID (which changes when the document is updated) and a
 ```
 
 ### Observations
+1. xattrs is not added to metadata, only present in body.
+2. 
+3. 
+4. xaatrs are added to metadata and not the body
