@@ -40,6 +40,12 @@ Had to correct the document id in request from 2 to 1
 - Delete the document using Postman
 
 ### Observations
+- Made a dummy document with _id:11 and "abcd":1234
+<img width="643" alt="image" src="https://github.com/user-attachments/assets/0e3ec9de-5d72-47a8-a00a-942a233e2f2f" />
+- Update DB to import new doc
+<img width="852" alt="image" src="https://github.com/user-attachments/assets/1dc4842c-31b9-4817-a62b-0b12156fb2d7" />
+- Get doc
+<img width="840" alt="image" src="https://github.com/user-attachments/assets/6740e99b-acd9-4e79-bee4-320ff513ed22" />
 
 ## Task 4
 
@@ -47,8 +53,11 @@ Had to correct the document id in request from 2 to 1
 
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
+I have created 1 doc through postman (id:1) and 2 through CB UI(id: 11 and 21). Each doc has a meta rev ID and a bunch of XATTRS rev IDs, one for each update to the doc.
+
 
 ### Observations
+
 
 ## Task 5
 
@@ -64,3 +73,4 @@ Had to correct the document id in request from 2 to 1
 ```
 
 ### Observations
+
