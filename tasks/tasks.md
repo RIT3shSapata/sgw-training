@@ -35,6 +35,12 @@ Response
 - Get the document using Postman
 
 ### Observations
+<img width="1623" alt="image" src="https://github.com/user-attachments/assets/f66ca281-f9f0-44ba-a2d5-44397f101dc3" />
+
+<img width="1569" alt="image" src="https://github.com/user-attachments/assets/201de84a-a8c9-418e-99f8-57b520a40ba9" />
+
+<img width="1610" alt="image" src="https://github.com/user-attachments/assets/649968dd-e209-4102-92c2-b59fe6da70fc" />
+
 
 ## Task 3
 
