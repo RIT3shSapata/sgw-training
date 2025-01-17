@@ -1,4 +1,7 @@
 {
+  "api": {
+    "admin_interface": "0.0.0.0:4985"
+  },
   "bootstrap": {
     "server": "couchbase://172.17.0.2",
     "username": "Administrator",

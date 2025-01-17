@@ -9,6 +9,9 @@
 
 ### Observations
 
+- The admin does not work when accessed from an external environment because of the nature of design of sync gateway and security purposes.
+- It works when an API key value is added to config1.json and admin_interface value is given as 0.0.0.0:4985 allowing any IP address to access to admin port.
+
 ## Task 2
 
 ### Description
@@ -19,6 +22,9 @@
 - Get the document using Postman
 
 ### Observations
+
+- I did not add the index service to the initial cb nodes. So i had to restart one of them and add the index service to the cluster 
+- I was able to create db1(database) and then I was able to create a document and retrieve it using Postman
 
 ## Task 3
 
@@ -31,6 +37,11 @@
 
 ### Observations
 
+- I was able to add the document to sync_gateway bucket 
+- I had to use Postman to update my database(db1) first.
+- And after it updated, I was able to retrieve my document using its Id(2).
+- I also had to change the name of the bucket in the body of the request for Update database in Postman
+
 ## Task 4
 
 ### Description
@@ -40,6 +51,9 @@
 
 ### Observations
 
+- The first number in the rev id demonstrates the revision number in the sync Gateway.
+- Every revision Id in a document represents a distinct change made in a document
+- Rev ids of documents in buckets where SyncGateway does not have access to, have 1 rev id no matter how many updates are made.
 ## Task 5
 
 ### Description
@@ -54,3 +68,6 @@
 ```
 
 ### Observations
+
+- enable shared bucket access allows ssync gateway to access documents created in the UI as well., and setting it to false does not allow It
+- Import docs command set to true updates to document as soon as it gets updated in the bucket whereas if it is false it updates it only when we are trying to access to specified document. 
