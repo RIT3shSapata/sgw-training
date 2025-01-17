@@ -88,7 +88,8 @@ Get the document using Postman:
 ```
 "rev": "2-181b7266f06900000000000002000006"
 "rev": "1-6c09ee187cece3ab2da390476ac6b48f"
-change in revision id with every fetch
+Revision Ids change when Sync Gateways are deployed. A normal fetch of the doc without the Sync Gateway retains the Revision Id.
+Therefore there is an update in the ID due to the sync Gateway.
 ```
 
 ## Task 5
