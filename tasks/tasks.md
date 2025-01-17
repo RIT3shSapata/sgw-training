@@ -44,7 +44,8 @@ Output on Postman:
 Steps:
 
 1. To make a db. just changed passwords (username: Administrator, password: password) and made them consistent. Also, in config2.json changed the bootstrap/server to "couchbase://10.5.0.2" back.
-
+2. Creating worked without changes
+3. Getting document needed the url changed from doc_id 2 to doc_id 1. Since, doc_id 2 didn't exist.
 
 ### Observations
 
