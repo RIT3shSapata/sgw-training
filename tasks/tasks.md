@@ -9,9 +9,8 @@
 
 ### Observations
 
-- Postman GET url: http://localhost:4984
-- Message: "couchdb": "Welcome", vendor: { "name" : "Couchbase Sync Gateway", "version": 3.2} "version": "Couchbase Sync Gateway/3.2.1(15;release) EE",
-- Docker commands: docker run -d --name cb_0 -p 8091:8091 couchbase:latest, docker run -d --name sgw -p 4984-4986:4984-4986 -v ./config1.json:/etc/sync_gateway/config.json couchbase/sync-gateway:enterprise
+- The admin does not work when accessed from an external environment because of the nature of design of sync gateway and security purposes.
+- It works when an API key value is added to config1.json and admin_interface value is given as 0.0.0.0:4985 allowing any IP address to access to admin port.
 
 ## Task 2
 
