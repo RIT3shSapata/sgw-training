@@ -37,6 +37,11 @@
 
 ### Observations
 
+- I was able to add the document to sync_gateway bucket 
+- I had to use Postman to update my database(db1) first.
+- And after it updated, I was able to retrieve my document using its Id(2).
+- I also had to change the name of the bucket in the body of the request for Update database in Postman
+
 ## Task 4
 
 ### Description
