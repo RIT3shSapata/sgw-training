@@ -9,6 +9,12 @@
 
 ### Observations
 
+- edit the config.json file and add the line:
+  "api": {
+      "admin_interface": "0.0.0.0:4985"
+    },  
+
+
 ## Task 2
 
 ### Description
@@ -20,6 +26,9 @@
 
 ### Observations
 
+-Both create worked, had to create a bucket
+-for get, just had to replace id 2 with 1
+
 ## Task 3
 
 ### Description
@@ -30,6 +39,7 @@
 - Delete the document using Postman
 
 ### Observations
+- Had to update the bucket config through update API(Change enable shared bucket access)
 
 ## Task 4
 
@@ -39,6 +49,7 @@
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+- Revision Id tells us how many times it has been changed
 
 ## Task 5
 
@@ -54,3 +65,7 @@
 ```
 
 ### Observations
+
+- All worked except the 2nd one, it gives
+  "error": "Bad Request",
+    "reason": "1 errors:\nInvalid configuration - import_docs enabled, but enable_shared_bucket_access not enabled"
