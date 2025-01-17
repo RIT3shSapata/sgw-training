@@ -52,6 +52,11 @@ Response
 - Delete the document using Postman
 
 ### Observations
+Need to update the DB before we can get the doc
+<img width="1564" alt="image" src="https://github.com/user-attachments/assets/776b6b5e-3a6e-47bd-856b-ec5a736c5cdd" />
+
+<img width="1598" alt="image" src="https://github.com/user-attachments/assets/2f92d480-b944-4e5f-a240-065ae72279db" />
+
 
 ## Task 4
 
