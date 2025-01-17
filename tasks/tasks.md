@@ -45,8 +45,12 @@ I created the doc id with 77 using UI
 ### Description
 
 - Create a document from Couchbase Server UI
+  
 - Review the revision IDs and explain the different values in revision IDs
-
+<img width="1343" alt="image" src="https://github.com/user-attachments/assets/4e7df209-c942-4f8f-b0a8-9760c8ba9c98" />
+the revision id is 2
+this basically acts like a sequence number ( it always monotically increases 
+the hash is the snapshot 
 ### Observations
 
 ## Task 5
