@@ -37,6 +37,7 @@ had to change doc id from 2 to 1 in the request
   <img width="1349" alt="image" src="https://github.com/user-attachments/assets/4a997ac9-92e8-4a26-b107-6a06ee77fdca" />
 I created the doc id with 77 using UI 
 - Delete the document using Postman
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/eb3a6dbb-b29e-4373-a111-3a4a378bc2a7" />
 
 ### Observations
 
