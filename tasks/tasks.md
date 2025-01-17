@@ -9,6 +9,13 @@
 
 ### Observations
 
+We expose ports `4984` to `4986`, amongst which port `4985` is the admin port. [Screenshot](/images/task-1.png).
++ We had to correct the host in postman too.
+Response:
+```json
+{"ADMIN":true,"couchdb":"Welcome","vendor":{"name":"Couchbase Sync Gateway","version":"3.2"},"version":"Couchbase Sync Gateway/3.2.1(15;release) EE","persistent_config":true}
+```
+
 ## Task 2
 
 ### Description
