@@ -23,6 +23,9 @@
 
 ### Observations
 
+- I did not add the index service to the initial cb nodes. So i had to restart one of them and add the index service to the cluster 
+- I was able to create db1(database) and then I was able to create a document and retrieve it using Postman
+
 ## Task 3
 
 ### Description
