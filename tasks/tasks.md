@@ -9,6 +9,14 @@
 
 ### Observations
 
+```
+  "api": {
+    "admin_interface": "0.0.0.0:4985"
+  }
+  there only in config2 and not config1
+  therefore postman works only for setup2 and not setup1
+  ```
+
 ## Task 2
 
 ### Description
