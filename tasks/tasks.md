@@ -26,10 +26,17 @@ The admin API works through postman
 
 - Setup SGW using setup 2
 - Create a Database using Postman
+- <img width="1344" alt="image" src="https://github.com/user-attachments/assets/3e62eac9-89b3-464b-b445-3ed8b2fd50d1" />
+
 - Create a Document using Postman
+  <img width="1302" alt="image" src="https://github.com/user-attachments/assets/55034ef4-7e76-4b56-915a-a5d156a4f77d" />
+  
 - Get the document using Postman
+  <img width="1298" alt="image" src="https://github.com/user-attachments/assets/2e2ca7f0-7cde-4253-868d-a888365dcea5" />
+
 
 ### Observations
+Used postman to complete the tasks. The bucket should already exist before these tasks.
 
 ## Task 3
 
