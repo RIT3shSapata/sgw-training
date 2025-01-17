@@ -9,6 +9,22 @@
 
 ### Observations
 
+<img width="1671" alt="image" src="https://github.com/user-attachments/assets/9b75a943-50df-4336-b053-307e13b681fd" />
+Added api -> admin interface section
+Response
+```
+{
+    "ADMIN": true,
+    "couchdb": "Welcome",
+    "vendor": {
+        "name": "Couchbase Sync Gateway",
+        "version": "3.2"
+    },
+    "version": "Couchbase Sync Gateway/3.2.1(15;release) EE",
+    "persistent_config": true
+}
+```
+
 ## Task 2
 
 ### Description
