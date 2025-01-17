@@ -26,6 +26,24 @@ Response:
 - Get the document using Postman
 
 ### Observations
++ We need to create a bucket named `test` with Flush: `true` and then run the PUT request to create the database, we get response as 201, created.
++ Create document request runs alright: we get a 200 with response
+```json
+{
+    "id": "1",
+    "ok": true,
+    "rev": "1-622c50a7af0ecb76dff71baa74d13333"
+}
+```
++ To get the document change the doc id to `1`, we get a 200 with response
+```json
+{
+    "_id": "1",
+    "_rev": "1-622c50a7af0ecb76dff71baa74d13333",
+    "key1": "value1",
+    "key2": "value2"
+}
+```
 
 ## Task 3
 
