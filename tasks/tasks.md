@@ -49,6 +49,7 @@
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+- Revision Id tells us how many times it has been changed
 
 ## Task 5
 
