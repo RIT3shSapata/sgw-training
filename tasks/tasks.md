@@ -72,4 +72,22 @@ the hash is the snapshot until before the revision
 
 I am not able to create a new doc using the ui , the xattr is not coming 
 the new docs created on the test db are not being marked in the xattr
-2. 
+2. false , true 
+
+<img width="664" alt="image" src="https://github.com/user-attachments/assets/02ca07ba-e1dc-471a-a831-6e2363759b5d" />
+
+the xattr is not getting updated but i am able to access the doc using postman 
+
+<img width="1362" alt="image" src="https://github.com/user-attachments/assets/5db8f17e-7c4d-46ed-a16a-6b1fa33509c7" />
+
+3. true , false 
+
+<img width="1364" alt="image" src="https://github.com/user-attachments/assets/9d4bd4e9-b62b-451e-aa55-50ee64146000" />
+
+invalid config 
+
+4. true , true 
+
+xattr get added even if you create the doc using the ui . 
+
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/83b595f9-5e0b-4b3b-bb7c-28bb88993287" />
