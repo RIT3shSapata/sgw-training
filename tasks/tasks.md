@@ -6,6 +6,8 @@
 
 - Setup SGW using setup 1
 - Use Postman to check if SGW is working (use Admin PORT)
+![image](https://github.com/user-attachments/assets/0e59d242-fcf3-4dc4-aee9-3c56ca07a6a2)
+had to add api section to config1.json 
 
 ### Observations
 
