@@ -24,6 +24,7 @@
 ### Observations
 
 - Created a docker network and then the sgw for the nodes composed using docker compose yaml file.
+- Created a database db1 in the travel-sample bucket
 - created the document: Output:
 - "id": 1, "ok": True, "rev": "1-622c50a7af0ecb76dff71baa74d13333"
 - Get document executed. Output: 
@@ -50,8 +51,8 @@
 
 ### Observations
 
-- Created a document in the default scope and collection of the travel-sample bucket using the UI with field "db_name": "db16"
-- Get document executed from postman. Set the "shared_bucket" field to true in the collections config of the api.
+- Created a document in the default scope and collection of the travel-sample bucket using the UI.
+- Get document executed from postman. Set the "enable_shared_bucket" field to true and "import_docs" to true in the collections config of the api.
 
 ## Task 4
 
@@ -61,6 +62,11 @@
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+
+- Created a document in the travel-sample bucket.
+- Initial revision ID present at the start.
+- Inside the xattr object, we have revision id indicating the updates made to the document.
+- Perform an update on the document using postman, a new revision id is seen. The first digit indicating the number of revisions made.
 
 ## Task 5
 
@@ -76,3 +82,8 @@
 ```
 
 ### Observations
+
+1. Cannot get the document through sgw. Import docs set to false. Doesn't work.
+2. Import docs property ignored. Cannot get the document. Gets a warning message that shared bucket access is set to false.
+3. Cannot get the doc through sgw.
+4. Can get the doc through sgw. Works.
