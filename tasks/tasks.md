@@ -133,3 +133,35 @@ Connection: keep-alive
 ```
 
 ### Observations
+1. {
+  "bucket": "SampleBucket",
+  "name": "db1",
+  "import_docs": false,
+  "enable_shared_bucket_access":false,
+  "num_index_replicas":0
+}
+Sync will only be able to access documents from the the mobile device and documents will only be processed by CB server when accessed
+
+2. {
+    "error": "Bad Request",
+    "reason": "1 errors:\nInvalid configuration - import_docs enabled, but enable_shared_bucket_access not enabled"
+}
+   Gives an error when trying to change, because when import docs is enabled, import docs property is ignored
+
+3. {
+  "bucket": "SampleBucket",
+  "name": "db1",
+  "import_docs": false,
+  "enable_shared_bucket_access":true,
+  "num_index_replicas":0
+}
+  No error given. The node is simply not allowed to perform import processing because the documents can still be accessed, but cannot be processed.
+
+4. {
+  "bucket": "SampleBucket",
+  "name": "db1",
+  "import_docs": true,
+  "enable_shared_bucket_access":true,
+  "num_index_replicas":0
+}
+  No error given. All the nodes participate in the import process for all the changes that occur in the server.
