@@ -65,3 +65,7 @@
 ```
 
 ### Observations
+
+- All worked except the 2nd one, it gives
+  "error": "Bad Request",
+    "reason": "1 errors:\nInvalid configuration - import_docs enabled, but enable_shared_bucket_access not enabled"
