@@ -11,9 +11,16 @@
 
 Output of last command: (on terminal)
 
-```{"couchdb":"Welcome","vendor":{"name":"Couchbase Sync Gateway","version":"3.2"},"version":"Couchbase Sync Gateway/3.2.1(15;release) EE","persistent_config":true}% ```
+```  {"couchdb":"Welcome","vendor":{"name":"Couchbase Sync Gateway","version":"3.2"},"version":"Couchbase Sync Gateway/3.2.1(15;release) EE","persistent_config":true}  ```
 
-```{
+_Steps:_
+
+Used config2 instead, where admin api is mentioned. Also, in config2 changed the bootstrap/server to "couchbase://172.17.0.2", and the bootstrap/password.
+
+Output on Postman:
+```
+{
+    "ADMIN": true,
     "couchdb": "Welcome",
     "vendor": {
         "name": "Couchbase Sync Gateway",
@@ -23,7 +30,6 @@ Output of last command: (on terminal)
     "persistent_config": true
 }
 ```
-
 
 ## Task 2
 
