@@ -51,6 +51,9 @@
 
 ### Observations
 
+- The first number in the rev id demonstrates the revision number in the sync Gateway.
+- Every revision Id in a document represents a distinct change made in a document
+- Rev ids of documents in buckets where SyncGateway does not have access to, have 1 rev id no matter how many updates are made.
 ## Task 5
 
 ### Description
@@ -65,3 +68,6 @@
 ```
 
 ### Observations
+
+- enable shared bucket access allows ssync gateway to access documents created in the UI as well., and setting it to false does not allow It
+- Import docs command set to true updates to document as soon as it gets updated in the bucket whereas if it is false it updates it only when we are trying to access to specified document. 
