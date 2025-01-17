@@ -26,6 +26,9 @@
 
 ### Observations
 
+-Both create worked, had to create a bucket
+-for get, just had to replace id 2 with 1
+
 ## Task 3
 
 ### Description
