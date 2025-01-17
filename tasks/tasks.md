@@ -44,10 +44,17 @@ Used postman to complete the tasks. The bucket should already exist before these
 
 - This task continues from the previous task
 - Create a dummy document from CB UI
+  <img width="1598" alt="image" src="https://github.com/user-attachments/assets/e5832486-fcbf-4778-b64e-2f8ca775a1a1" />
+
 - Get the document contents using Postman
+  <img width="642" alt="image" src="https://github.com/user-attachments/assets/40e917ac-8d1c-4d8b-b3e3-84350f88972b" />
+  <img width="768" alt="image" src="https://github.com/user-attachments/assets/c98d2e5d-448a-4e54-819a-770c2386f06d" />
+
+
 - Delete the document using Postman
 
 ### Observations
+- You need to update the database before getting document contents.
 
 ## Task 4
 
