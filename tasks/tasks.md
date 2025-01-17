@@ -9,16 +9,10 @@
 
 ### Observations
 
-- Its working
-  {
-    "couchdb": "Welcome",
-    "vendor": {
-        "name": "Couchbase Sync Gateway",
-        "version": "3.2"
-    },
-    "version": "Couchbase Sync Gateway/3.2.1(15;release) EE",
-    "persistent_config": true
-  }
+- edit the config.json file and add the line:
+  "api": {
+      "admin_interface": "0.0.0.0:4985"
+    },  
 
 
 ## Task 2
