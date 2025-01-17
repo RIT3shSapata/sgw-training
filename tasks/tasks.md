@@ -9,6 +9,9 @@
 
 ### Observations
 
+- Connected to the sgw using the config file with the username and password after creating the user and the password.
+- Postman couldn't ping the localhost on the admin port. Included the admin interface port number in the config2.json file.
+
 ## Task 2
 
 ### Description
@@ -19,6 +22,22 @@
 - Get the document using Postman
 
 ### Observations
+
+- Created a docker network and then the sgw for the nodes composed using docker compose yaml file.
+- created the document: Output:
+- "id": 1, "ok": True, "rev": "1-622c50a7af0ecb76dff71baa74d13333"
+- Get document executed. Output: 
+- {
+    "db_name": "db1",
+    "update_seq": 1,
+    "committed_update_seq": 1,
+    "instance_start_time": 1737106922186214,
+    "compact_running": false,
+    "purge_seq": 0,
+    "disk_format_version": 0,
+    "state": "Online",
+    "server_uuid": "b7d539a04e4f19cdefc6db880a471ca3"
+}
 
 ## Task 3
 
