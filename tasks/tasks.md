@@ -55,7 +55,7 @@ Response:
 - Delete the document using Postman
 
 ### Observations
-+ To create a document using UI that is understandable to SGW we need to add proper metadata, copied it from doc: 1
++ To create a document using UI that is understandable to SGW we need to add proper body, copied it from doc: 1
 ```json
 {
   "key1": "valuefrom-ui",
@@ -97,6 +97,7 @@ also changed the revision for good measure.
 
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
+- Also the metadata from postman ends with `0000`, with UI it ends with `0006`
 
 ### Observations
 We have a current revision ID (which changes when the document is updated) and a history of past revision IDs 
