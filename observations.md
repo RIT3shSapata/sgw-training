@@ -15,4 +15,5 @@
 
 ```
 # Task 2
-
+- Got 201 after creating bucket
+> Assumed it would create a bucket on its own 
