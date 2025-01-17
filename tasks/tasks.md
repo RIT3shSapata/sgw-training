@@ -8,7 +8,6 @@
 - Use Postman to check if SGW is working (use Admin PORT)
 
 ### Observations
-
 ```
   "api": {
     "admin_interface": "0.0.0.0:4985"
@@ -27,7 +26,30 @@
 - Get the document using Postman
 
 ### Observations
+```
+Database Creation Using Postman:
+http://127.0.0.1:4985/db1/
+http://127.0.0.1:4985/_all_dbs
+[
+    "db"
+]
 
+Document using Postman:
+http://127.0.0.1:4985/db/?name=saimirra
+
+Get the document using Postman:
+{
+    "db_name": "db",
+    "update_seq": 2,
+    "committed_update_seq": 2,
+    "instance_start_time": 1737106749563621,
+    "compact_running": false,
+    "purge_seq": 0,
+    "disk_format_version": 0,
+    "state": "Online",
+    "server_uuid": "4ff08613deec312686f6aacb5053718b"
+}
+```
 ## Task 3
 
 ### Description
@@ -38,15 +60,33 @@
 - Delete the document using Postman
 
 ### Observations
-
+```
+- Create a dummy document from CB UI
+- Get the document contents using Postman
+{
+    "db_name": "db",
+    "update_seq": 4,
+    "committed_update_seq": 4,
+    "instance_start_time": 1737106749563621,
+    "compact_running": false,
+    "purge_seq": 0,
+    "disk_format_version": 0,
+    "state": "Online",
+    "server_uuid": "4ff08613deec312686f6aacb5053718b"
+}
+```
 ## Task 4
 
 ### Description
-
+```
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
+```
+
 
 ### Observations
+```
+```
 
 ## Task 5
 
