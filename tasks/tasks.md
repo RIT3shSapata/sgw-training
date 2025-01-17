@@ -65,7 +65,7 @@ There are different revisions id's because sync gateway processes and if updatin
 ```
 
 ### Observations
-1) updates with option 1 on server ui do not show on sgw and new documets created wont be found
+1) updates with option 1 on server ui do not show on sgw and new documets created wont be found, changes wont be accessible
 2) false true did not work - shared bucket access with import docs doesnt make sense
-3) this updates one way , changes on sync gateway will reflect in server but not the other way
+3) this updates one way , updates revision id only when accessing through sync gateway
 4) both ways work
