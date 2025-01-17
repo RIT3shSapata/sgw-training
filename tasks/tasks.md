@@ -63,7 +63,25 @@ Used postman to complete the tasks. The bucket should already exist before these
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
 
+
+<img width="669" alt="image" src="https://github.com/user-attachments/assets/b2ba5c62-cd15-4d1e-b043-02dd71212015" />
+<img width="704" alt="image" src="https://github.com/user-attachments/assets/0e224ffd-33eb-4d62-a71c-bdb9ae14ed99" />
+
+
 ### Observations
+- The `meta.rev` shows "2-" (e.g., "2-181b7014b66900000000000002000000") because this is the current revision of the document in Couchbase Server.
+- The `_sync.rev` shows "1-" (e.g., "1-622c50a7af0ecb76dff71baa74d13333") because this represents the last revision that was processed by Sync Gateway.
+ 
+The revision ID in Couchbase Server shows "2-" because this document has been modified twice:
+
+1. First Generation (1-):
+   - When the document was initially created in Couchbase Server
+
+2. Second Generation (2-):
+   - When Sync Gateway processed the document and added its metadata (the `_sync` xattr)
+   - The act of Sync Gateway adding its synchronization metadata (`_sync` xattr) counts as a modification to the document
+   - This modification automatically increments the document's revision number in Couchbase Server
+
 
 ## Task 5
 
