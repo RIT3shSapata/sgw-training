@@ -8,6 +8,17 @@
 - Use Postman to check if SGW is working (use Admin PORT)
 
 ### Observations
+The admin API works through postman
+
+ ```
+"api": {
+    "admin_interface": "0.0.0.0:4985"
+  },
+  ```
+  is important in the task
+
+  ![alt text](image-1.png)
+
 
 ## Task 2
 
