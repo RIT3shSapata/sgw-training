@@ -17,6 +17,8 @@ had to add api section to config1.json
 
 - Setup SGW using setup 2
 - Create a Database using Postman
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/68e68e86-9cf5-460f-9094-26993fbeb687" />
+had to create a bucket called test
 - Create a Document using Postman
 - Get the document using Postman
 
