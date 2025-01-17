@@ -39,6 +39,7 @@
 - Delete the document using Postman
 
 ### Observations
+- Had to update the bucket config through update API(Change enable shared bucket access)
 
 ## Task 4
 
