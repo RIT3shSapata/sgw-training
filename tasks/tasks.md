@@ -53,11 +53,10 @@ Had to correct the document id in request from 2 to 1
 
 - Create a document from Couchbase Server UI
 - Review the revision IDs and explain the different values in revision IDs
-I have created 1 doc through postman (id:1) and 2 through CB UI(id: 11 and 21). Each doc has a meta rev ID and a bunch of XATTRS rev IDs, one for each update to the doc.
 
 
 ### Observations
-
+I have created 1 doc through postman (id:1) and 2 through CB UI(id: 11 and 21). Each doc has a meta rev ID and a bunch of XATTRS rev IDs, one for each update to the doc. I'm guessing the XATTRS rev IDs are for each time a doc update is processed by sync gateway?
 
 ## Task 5
 
@@ -73,4 +72,21 @@ I have created 1 doc through postman (id:1) and 2 through CB UI(id: 11 and 21). 
 ```
 
 ### Observations
+For (4.) we've already seen the effects of true,true - document updates are reflected in the SGW DB on update. Let's try document updates with each config
 
+1. false, false - 
+<img width="1488" alt="image" src="https://github.com/user-attachments/assets/b1d16992-c784-4c72-8023-e923cd1571b8" />
+error object not found in CB UI
+
+2. false, true - same error as (1)
+3. true, false -
+<img width="863" alt="image" src="https://github.com/user-attachments/assets/c347f300-e2c3-4910-9889-43ba999f0d8b" />
+it is not allowed, which makes sense as it doesn't make sense to import doc when you dont have shared bucket access.
+
+Now let's try document create on CB with each config
+
+1. false, false -
+<img width="853" alt="image" src="https://github.com/user-attachments/assets/84b36b48-364e-4d27-aa63-a06a06fabc97" />
+2. false, true -
+  
+3. true, false - bad request
