@@ -94,6 +94,98 @@ In postman send a get request to ```http://127.0.0.1:4985/db1/2```
 
 ### Observations
 
+Revision ID describes the current version of the document. For example:
+```
+{
+  "meta": {
+    "id": "2",
+    "rev": "2-181b6f5882c700000000000002000006",
+    "expiration": 0,
+    "flags": 33554438,
+    "type": "json"
+  },
+  "xattrs": {
+    "_mou": {
+      "cas": "0x0000c782586f1b18",
+      "pCas": "0x0000a282586f1b18"
+    },
+    "_sync": {
+      "cas": "0x0000c782586f1b18",
+      "channel_set": null,
+      "channel_set_history": null,
+      "cluster_uuid": "9155dbbdd9cfcf374b972e4dffe1b65e",
+      "history": {
+        "channels": [
+          null
+        ],
+        "parents": [
+          -1
+        ],
+        "revs": [
+          "1-52e07d99bdbe50f26ce4b2fc35ecdd5d"
+        ]
+      },
+      "recent_sequences": [
+        2
+      ],
+      "rev": "1-52e07d99bdbe50f26ce4b2fc35ecdd5d",
+      "sequence": 2,
+      "time_saved": "2025-01-17T09:01:47.222560546Z",
+      "value_crc32c": "0x34043e82"
+    }
+  }
+}
+```
+This was the original Metadata. Note the "rev" field.
+Now i made a modification to the document
+Now this is the metadata:
+```
+{
+  "meta": {
+    "id": "2",
+    "rev": "4-181b6ff330be00000000000002000006",
+    "expiration": 0,
+    "flags": 33554438,
+    "type": "json"
+  },
+  "xattrs": {
+    "_mou": {
+      "cas": "0x0000be30f36f1b18",
+      "pCas": "0x00009230f36f1b18"
+    },
+    "_sync": {
+      "cas": "0x0000be30f36f1b18",
+      "channel_set": null,
+      "channel_set_history": null,
+      "cluster_uuid": "9155dbbdd9cfcf374b972e4dffe1b65e",
+      "history": {
+        "channels": [
+          null,
+          null
+        ],
+        "parents": [
+          -1,
+          0
+        ],
+        "revs": [
+          "1-52e07d99bdbe50f26ce4b2fc35ecdd5d",
+          "2-2144b63db2e616c2fb5d95dc0aec90f6"
+        ]
+      },
+      "recent_sequences": [
+        2,
+        3
+      ],
+      "rev": "2-2144b63db2e616c2fb5d95dc0aec90f6",
+      "sequence": 3,
+      "time_saved": "2025-01-17T09:12:51.56654384Z",
+      "value_crc32c": "0x25a63f8f"
+    }
+  }
+}
+```
+You can see that in the list now we have two "revs" values. If i edit one more time, there will be three. So revision IDs basically store the id of the each version of the document from its time of creation.
+
 ## Task 5
 
 ### Description
@@ -108,3 +200,5 @@ In postman send a get request to ```http://127.0.0.1:4985/db1/2```
 ```
 
 ### Observations
+
+
