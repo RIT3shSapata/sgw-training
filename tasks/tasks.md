@@ -68,8 +68,19 @@ Connection: keep-alive
 - Delete the document using Postman
 
 ### Observations
--
-
+- Created the dummy document
+  {
+    "desc": "this is a dummy document"
+  }
+- Updated the db using Update Database
+- Got the dummy document using Get Document
+  {
+    "_id": "dummy",
+    "_rev": "1-e43ed042c193383b45db89c0ea2ae61b",
+    "desc": "this is a dummy document"
+  }
+- DELETE doesn't work: conflict
+  
 ## Task 4
 
 ### Description
