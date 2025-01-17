@@ -43,3 +43,13 @@ Dropping it
 - COuld not delete, say conflict error
 - tried to create a docs viapostman and delete the doc and worked 
 > due to shared bucket ig?
+
+# Task 4
+- Due to database not being reynced
+- Appears in the revs list, if resynced
+
+
+# Task 5
+
+- if set to False, gateway can access docs created via mobile systems and not docs on server itsel
+- if set to true, Documents written by the Couchbase Server can also be accessed via Sync Gateway 
