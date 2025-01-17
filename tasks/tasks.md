@@ -99,6 +99,7 @@ also changed the revision for good measure.
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+We have a current revision ID (which changes when the document is updated) and a history of past revision IDs 
 
 ## Task 5
 
