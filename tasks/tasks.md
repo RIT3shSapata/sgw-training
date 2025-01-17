@@ -27,9 +27,11 @@
 
 ### Observations
 match the sample bucket
+then geT
 
 ## Task 3
 
+update database from ui
 ### Description
 
 - This task continues from the previous task
