@@ -66,6 +66,8 @@ Need to update the DB before we can get the doc
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+Since sync gateway also processes the document, it increments the revision id to 2.
+<img width="1229" alt="image" src="https://github.com/user-attachments/assets/ddfaabe9-5cc4-4b33-9d45-b6047109a63f" />
 
 ## Task 5
 
