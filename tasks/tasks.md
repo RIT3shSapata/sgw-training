@@ -34,6 +34,8 @@ had to change doc id from 2 to 1 in the request
 - This task continues from the previous task
 - Create a dummy document from CB UI
 - Get the document contents using Postman
+  <img width="1349" alt="image" src="https://github.com/user-attachments/assets/4a997ac9-92e8-4a26-b107-6a06ee77fdca" />
+I created the doc id with 77 using UI 
 - Delete the document using Postman
 
 ### Observations
