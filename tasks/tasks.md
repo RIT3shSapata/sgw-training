@@ -1,4 +1,4 @@
-# Tasks
+# Tasks - Goutham Krishnan
 
 ## Task 1
 
@@ -49,6 +49,9 @@
 - Delete the document using Postman
 
 ### Observations
+
+- Created a document in the default scope and collection of the travel-sample bucket using the UI with field "db_name": "db16"
+- Get document executed from postman. Set the "shared_bucket" field to true in the collections config of the api.
 
 ## Task 4
 
