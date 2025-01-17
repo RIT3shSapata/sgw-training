@@ -8,7 +8,14 @@
 - Use Postman to check if SGW is working (use Admin PORT)
 
 ### Observations
+```
+```
+"api": {
+        "admin_interface": "0.0.0.0:4985"
+      },
+```
 
+```
 ## Task 2
 
 ### Description
@@ -19,8 +26,11 @@
 - Get the document using Postman
 
 ### Observations
+match the sample bucket
+then geT
 
 ## Task 3
+
 
 ### Description
 
@@ -30,7 +40,7 @@
 - Delete the document using Postman
 
 ### Observations
-
+update database from ui
 ## Task 4
 
 ### Description
@@ -39,6 +49,7 @@
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+There are different revisions id's because sync gateway processes and if updating it to the new synch value(metadata change)
 
 ## Task 5
 
@@ -54,3 +65,7 @@
 ```
 
 ### Observations
+1) updates with option 1 on server ui do not show on sgw and new documets created wont be found, changes wont be accessible
+2) false true did not work - shared bucket access with import docs doesnt make sense
+3) this updates one way , updates revision id only when accessing through sync gateway
+4) both ways work
