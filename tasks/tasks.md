@@ -83,3 +83,8 @@ Since sync gateway also processes the document, it increments the revision id to
 ```
 
 ### Observations
+1. <img width="1510" alt="image" src="https://github.com/user-attachments/assets/fcb9c124-c8f4-49fd-9d01-e6a2074d289c" />
+2. Won't let you change <img width="1302" alt="image" src="https://github.com/user-attachments/assets/efe099a8-545e-4687-ac16-96ee418332e7" />
+
+3. <img width="1225" alt="image" src="https://github.com/user-attachments/assets/751e1498-4e48-4e37-80ca-7f96edb7e614" />
+4. <img width="1288" alt="image" src="https://github.com/user-attachments/assets/3beb0944-e626-464e-b4d2-ac490c10608f" />
