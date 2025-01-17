@@ -67,3 +67,9 @@ the hash is the snapshot
 ```
 
 ### Observations
+1. false , false 
+![image](https://github.com/user-attachments/assets/07a9a23e-38bd-494e-b74c-c0708bd31f1e)
+
+I am not able to create a new doc using the ui , the xattr is not coming 
+the new docs created on the test db are not being marked in the xattr
+2. 
