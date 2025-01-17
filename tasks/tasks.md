@@ -26,6 +26,7 @@
 - Get the document using Postman
 
 ### Observations
+match the sample bucket
 
 ## Task 3
 
