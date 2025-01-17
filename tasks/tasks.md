@@ -55,6 +55,41 @@ Response:
 - Delete the document using Postman
 
 ### Observations
++ To create a document using UI that is understandable to SGW we need to add proper metadata, copied it from doc: 1
+```json
+{
+  "key1": "valuefrom-ui",
+  "key2": "value2from-ui",
+  "_sync": {
+    "rev": "1-622c50a7af0ecb76dff71baa74d13334",
+    "sequence": 1,
+    "recent_sequences": [
+      1
+    ],
+    "cas": "",
+    "value_crc32c": "",
+    "channel_set": null,
+    "channel_set_history": null,
+    "time_saved": "2025-01-17T08:59:34.432954876Z",
+    "cluster_uuid": "d4589fb6ac7ee43584955fbf65d197ef",
+    "history": {
+      "revs": [
+        "1-622c50a7af0ecb76dff71baa74d13334"
+      ],
+      "parents": [
+        -1
+      ],
+      "channels": [
+        null
+      ]
+    }
+  }
+}
+```
+also changed the revision for good measure.
+
++ We can simply make a request to /db1/2
++ Skip delete
 
 ## Task 4
 
