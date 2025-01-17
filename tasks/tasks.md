@@ -21,7 +21,8 @@ Output of last command: (on terminal)
     },
     "version": "Couchbase Sync Gateway/3.2.1(15;release) EE",
     "persistent_config": true
-}```
+}
+```
 
 
 ## Task 2
