@@ -201,4 +201,33 @@ You can see that in the list now we have two "revs" values. If i edit one more t
 
 ### Observations
 
+1. SHARED BUCKET ACCESS AND IMPORT DOCS FALSE
+![alt text](image-11.png)
 
+![alt text](image-13.png)
+
+5 docs are created by default
+
+I created a document in UI but i cannot get it through sync gateway since it is not imported as import docs is false
+![alt text](image-15.png)
+
+2. SHARED BUCKET : FALSE AND IMPORT DOCS TRUE IS NOT POSSIBLE
+![alt text](image-16.png)
+
+You cannot enable import docs without enabling shared bucket access since without permission to access buckets in the cb server you cannot import docs.
+
+3. ENABLED SHARED BUCKET ACCESS BUT DISABLED IMPORT DOCS
+
+![alt text](image-17.png)
+
+WE ARE ABLE TO ACCESS DOCUMENT CREATED USING UI SINCE SHARED BUCKET ACCESS IS TRUE
+![alt text](image-18.png)
+BUT ACCESS TOOK 7MS as it had to fetch from cb server
+
+4. BOTH ENABLED
+![alt text](image-14.png)
+
+
+YOU CAN ACCESS THE DOCS FROM SYNCGATEWAY .
+![alt text](image-19.png)
+IT ONLY TOOK 4 MS SINCE IT IS ALREADY IMPORTED INTO SYNCGATEWAT
