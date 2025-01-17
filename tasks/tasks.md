@@ -6,6 +6,9 @@
 
 - Setup SGW using setup 1
 - Use Postman to check if SGW is working (use Admin PORT)
+Observation:
+<img width="851" alt="image" src="https://github.com/user-attachments/assets/0692feda-e03c-48f6-9415-901932e52541" />
+
 
 ### Observations
 
