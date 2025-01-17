@@ -40,6 +40,12 @@ Output on Postman:
 - Create a Document using Postman
 - Get the document using Postman
 
+
+Steps:
+
+1. To make a db. just changed passwords (username: Administrator, password: password) and made them consistent. Also, in config2.json changed the bootstrap/server to "couchbase://10.5.0.2" back.
+
+
 ### Observations
 
 ## Task 3
