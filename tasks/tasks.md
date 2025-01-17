@@ -20,8 +20,11 @@ had to add api section to config1.json
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/68e68e86-9cf5-460f-9094-26993fbeb687" />
 had to create a bucket called test
 - Create a Document using Postman
-- Get the document using Postman
+<img width="1362" alt="image" src="https://github.com/user-attachments/assets/a93ca558-d74d-4aee-a47e-95e1080f75c3" />
 
+- Get the document using Postman
+<img width="1356" alt="image" src="https://github.com/user-attachments/assets/922ef9a2-aade-4ed9-849f-c4b8fe4ccd5c" />
+had to change doc id from 2 to 1 in the request
 ### Observations
 
 ## Task 3
