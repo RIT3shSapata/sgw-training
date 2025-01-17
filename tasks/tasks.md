@@ -186,6 +186,12 @@ Now this is the metadata:
 ```
 You can see that in the list now we have two "revs" values. If i edit one more time, there will be three. So revision IDs basically store the id of the each version of the document from its time of creation.
 
+
+My explaination for different revision id:
+When I accessed a document from postman through syncgateway, i noticed that there also rev id was changing. I also noticed that if syncgateway is not in the picture, that is a different bucket which is not linked to syncgateway, then the rev id will be same and it wont show two different rev id. So this means the different revision id getting displayed has something to do with sync gateway.
+
+My theory is that, the two different rev id being displayed, one of them is from syncgateway. For the same document, it is getting different rev id when syncgateway imports it. Hence two different rev id is being displayed when sync gateway is involved.
+
 ## Task 5
 
 ### Description
