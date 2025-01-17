@@ -9,6 +9,10 @@
 
 ### Observations
 
+- Postman GET url: http://localhost:4984
+- Message: "couchdb": "Welcome", vendor: { "name" : "Couchbase Sync Gateway", "version": 3.2} "version": "Couchbase Sync Gateway/3.2.1(15;release) EE",
+- Docker commands: docker run -d --name cb_0 -p 8091:8091 couchbase:latest, docker run -d --name sgw -p 4984-4986:4984-4986 -v ./config1.json:/etc/sync_gateway/config.json couchbase/sync-gateway:enterprise
+
 ## Task 2
 
 ### Description
