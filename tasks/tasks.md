@@ -86,6 +86,9 @@ Get the document using Postman:
 
 ### Observations
 ```
+"rev": "2-181b7266f06900000000000002000006"
+"rev": "1-6c09ee187cece3ab2da390476ac6b48f"
+change in revision id with every fetch
 ```
 
 ## Task 5
