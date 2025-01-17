@@ -54,3 +54,13 @@
 ```
 
 ### Observations
+```
+1. enable_shared_bucket_access: false, import_docs: false
+Import docs is false
+2. enable_shared_bucket_access: false, import_docs: true
+Import docs is properly ignored, warning logged
+3. enable_shared_bucket_access: true, import_docs: false
+Node omitted from import processing, supported for workload isolation
+4. enable_shared_bucket_access: true, import_docs: true
+Node participates in import processing and is  assigned partitions.
+```
