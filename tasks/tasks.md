@@ -1,4 +1,4 @@
-# Tasks
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/c7d8159c-9a08-4848-8cd1-f58f8bd1f6bd" /># Tasks
 
 ## Task 1
 
@@ -91,9 +91,45 @@ The revision ID in Couchbase Server shows "2-" because this document has been mo
 
 ```
 1. enable_shared_bucket_access: false, import_docs: false
+
 2. enable_shared_bucket_access: false, import_docs: true
+
 3. enable_shared_bucket_access: true, import_docs: false
+
 4. enable_shared_bucket_access: true, import_docs: true
+
 ```
 
 ### Observations
+1. enable_shared_bucket_access: false, import_docs: false
+<img width="1007" alt="image" src="https://github.com/user-attachments/assets/845ca8ab-89a2-4572-831e-c8b6b323da61" />
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/738ae85f-529c-4571-88b2-0e0f08f696c0" />
+
+- Sync Gateway can only access documents created through mobile clients
+   - XATTRs will be stored in document body (not metadata)
+   - Document metadata limit is 20MB (same as document size)
+   - Documents written by Couchbase Server:
+     * Won't be automatically processed by Import Processing
+     * Won't be accessible via Sync Gateway at all
+   This is the most restrictive configuration, suitable only for pure mobile-only scenarios.
+
+
+2. enable_shared_bucket_access: false, import_docs: true
+This configuration doesn't make practical sense as import_docs can't work without shared bucket access.
+<img width="928" alt="image" src="https://github.com/user-attachments/assets/37904aaa-d7da-4db8-ac36-4e45761a7251" />
+
+
+3. enable_shared_bucket_access: true, import_docs: false
+- Sync Gateway can access both mobile and server-created documents
+   - Documents written by Couchbase Server:
+     * Will only go through Import Processing when accessed
+     * Are accessible via Sync Gateway
+     * Won't be automatically imported
+   This is good for scenarios where you want selective import of server documents.
+
+4. enable_shared_bucket_access: true, import_docs: true
+- Sync Gateway can access both mobile and server-created documents
+   - Documents written by Couchbase Server:
+     * Will automatically go through Import Processing
+     * Are immediately accessible via Sync Gateway
+   This is the most open configuration, suitable for active two-way sync between server and mobile.
