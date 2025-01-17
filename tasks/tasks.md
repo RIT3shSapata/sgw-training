@@ -8,7 +8,14 @@
 - Use Postman to check if SGW is working (use Admin PORT)
 
 ### Observations
+```
+```
+"api": {
+        "admin_interface": "0.0.0.0:4985"
+      },
+```
 
+```
 ## Task 2
 
 ### Description
