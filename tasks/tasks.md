@@ -31,7 +31,7 @@ then geT
 
 ## Task 3
 
-update database from ui
+
 ### Description
 
 - This task continues from the previous task
@@ -40,7 +40,7 @@ update database from ui
 - Delete the document using Postman
 
 ### Observations
-
+update database from ui
 ## Task 4
 
 ### Description
@@ -49,6 +49,7 @@ update database from ui
 - Review the revision IDs and explain the different values in revision IDs
 
 ### Observations
+There are different revisions id's because sync gateway processes and if updating it to the new synch value(metadata change)
 
 ## Task 5
 
