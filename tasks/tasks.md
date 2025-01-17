@@ -39,6 +39,24 @@ Connection: keep-alive
 - Get the document using Postman
 
 ### Observations
+- Created SGW using setup 2
+  
+- Successfully created a Database in the bucket SampleBucket (creatd 5 documents inside it)
+  
+- Created a document
+  {
+    "id": "1",
+    "ok": true,
+    "rev": "1-622c50a7af0ecb76dff71baa74d13333"
+  }
+
+-Got the document using Postman
+{
+    "_id": "1",
+    "_rev": "1-622c50a7af0ecb76dff71baa74d13333",
+    "key1": "value1",
+    "key2": "value2"
+}
 
 ## Task 3
 
@@ -50,6 +68,7 @@ Connection: keep-alive
 - Delete the document using Postman
 
 ### Observations
+-
 
 ## Task 4
 
