@@ -75,6 +75,16 @@ GET DOCUMENT
 
 ### Observations
 
+Created a dummy document in my bucket with id 2 through UI
+![alt text](image-9.png)
+
+In postman send a get request to ```http://127.0.0.1:4985/db1/2```
+
+![alt text](image-10.png)
+
+
+
+
 ## Task 4
 
 ### Description
